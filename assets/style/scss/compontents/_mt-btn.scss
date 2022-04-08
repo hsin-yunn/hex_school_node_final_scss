@@ -1,0 +1,22 @@
+.mt-btn {
+  @include ts;
+  padding: 16px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--primary);
+  border: 2px solid var(--gray-900);
+  border-radius: 8px;
+  box-shadow: -2px 2px 0px var(--gray-900);
+  cursor: pointer;
+  &:not(.disabled):hover {
+    background-color: var(--secondary);
+  }
+  &.disabled {
+    background-color: var(--disabled);
+    border: 2px solid var(--gray-800);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}

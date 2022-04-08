@@ -1,0 +1,7 @@
+.mt-state {
+  &__error-message {
+    @include auto_margin_top(4px);
+    font-size: 0.875rem;
+    color: var(--alert);
+  }
+}

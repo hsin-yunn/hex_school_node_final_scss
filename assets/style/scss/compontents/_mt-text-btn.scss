@@ -1,0 +1,11 @@
+.mt-text-btn {
+  @include ts;
+  border: none;
+  background-color: transparent;
+  color: var(--gray-900);
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    color: var(--primary);
+  }
+}

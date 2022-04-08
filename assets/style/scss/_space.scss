@@ -1,0 +1,123 @@
+.height-full {
+  height: 100% !important;
+}
+.width-full {
+  width: 100% !important;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .md-height-full {
+    height: 100% !important;
+  }
+  .md-height-auto {
+    height: 100% !important;
+  }
+  .md-width-full {
+    width: auto !important;
+  }
+  .md-width-auto {
+    width: auto !important;
+  }
+}
+@media (max-width: 767px) {
+  .sm-height-full {
+    height: 100% !important;
+  }
+  .sm-height-auto {
+    height: auto !important;
+  }
+  .sm-width-full {
+    width: 100% !important;
+  }
+  .sm-width-auto {
+    width: auto !important;
+  }
+}
+
+@mixin spacing($space, $prefix: '') {
+  .#{$prefix}ma-#{$space} {
+    margin: #{$space}px !important;
+  }
+  .#{$prefix}mx-#{$space} {
+    margin-left: #{$space}px !important;
+    margin-right: #{$space}px !important;
+  }
+  .#{$prefix}my-#{$space} {
+    margin-top: #{$space}px !important;
+    margin-bottom: #{$space}px !important;
+  }
+  .#{$prefix}mt-#{$space} {
+    margin-top: #{$space}px !important;
+  }
+  .#{$prefix}mb-#{$space} {
+    margin-bottom: #{$space}px !important;
+  }
+  .#{$prefix}ml-#{$space} {
+    margin-left: #{$space}px !important;
+  }
+  .#{$prefix}mr-#{$space} {
+    margin-right: #{$space}px !important;
+  }
+  .#{$prefix}pa-#{$space} {
+    padding: #{$space}px !important;
+  }
+  .#{$prefix}px-#{$space} {
+    padding-left: #{$space}px !important;
+    padding-right: #{$space}px !important;
+  }
+  .#{$prefix}py-#{$space} {
+    padding-top: #{$space}px !important;
+    padding-bottom: #{$space}px !important;
+  }
+  .#{$prefix}pt-#{$space} {
+    padding-top: #{$space}px !important;
+  }
+  .#{$prefix}pb-#{$space} {
+    padding-bottom: #{$space}px !important;
+  }
+  .#{$prefix}pl-#{$space} {
+    padding-left: #{$space}px !important;
+  }
+  .#{$prefix}pr-#{$space} {
+    padding-right: #{$space}px !important;
+  }
+}
+
+@mixin spacing_looping($prefix: '', $from: 0, $to: 12, $per: 4) {
+  @for $i from $from through $to {
+    $space: $i * $per;
+    @include spacing($space, $prefix);
+  }
+}
+
+@include spacing_looping('');
+@include spacing_looping('', 5, 15, 10);
+@include spacing_looping('', 4, 12, 50);
+// iPad
+@media (max-width: 1023px) {
+  @include spacing_looping(md-);
+  @include spacing_looping(md-, 5, 15, 10);
+  @include spacing_looping(md-, 4, 12, 50);
+}
+// Mobile
+@media (max-width: 767px) {
+  @include spacing_looping(sm-);
+  @include spacing_looping(sm-, 5, 15, 10);
+  @include spacing_looping(sm-, 4, 12, 50);
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
