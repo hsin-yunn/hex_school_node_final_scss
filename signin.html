@@ -19,32 +19,39 @@
 </head>
 
 <body>
-  <div class="mt-login-card pos-center">
-    <img
-      src="./assets/images/img.svg"
-      alt="img"
-      class="mt-login-card__img"
-    >
-    <div class="mt-login-card__content ml-48">
-      <p class="mt-login-card__content__title">MetaWall</p>
-      <p class="mt-login-card__content__subtitle">到元宇宙展開全新社交圈</p>
-      <div class="mt-state-input mt-16">
-        <input
-          type="email"
-          name="Email"
-          placeholder="Email"
-        >
+  <div class="container sm-pt-20 sm-pb-20">
+    <div class="mt-login-card pos-center pos-sm-rel center">
+      <img
+        src="./assets/images/img.svg"
+        alt="img"
+        class="mt-login-card__img"
+      >
+      <div class="mt-login-card__content ml-48">
+        <p class="mt-login-card__content__title">MetaWall</p>
+        <p class="mt-login-card__content__subtitle">到元宇宙展開全新社交圈</p>
+        <div class="mt-state-input mt-16">
+          <input
+            type="email"
+            name="Email"
+            placeholder="Email"
+          >
+        </div>
+        <div class="mt-state-input mt-16">
+          <input
+            type="password"
+            name="Password"
+            placeholder="Password"
+          >
+        </div>
+        <!-- 錯誤訊息 顯示將class d-none拿掉 -->
+        <p class="mt-error-message mt-32 d-none">暱稱至少 2 個字元以上</p>
+        <!-- disabled狀態 class將上disabeld -->
+        <button class="mt-btn mt-16">登入</button>
+        <a
+          href="./signup.html"
+          class="mt-text-btn mt-16"
+        >註冊帳號</a>
       </div>
-      <div class="mt-state-input mt-16">
-        <input
-          type="password"
-          name="Password"
-          placeholder="Password"
-        >
-      </div>
-      <p class="mt-error-message mt-32">暱稱至少 2 個字元以上</p>
-      <button class="mt-btn mt-16 disabled">登入</button>
-      <button class="mt-text-btn mt-16">註冊帳號</button>
     </div>
   </div>
 </body>

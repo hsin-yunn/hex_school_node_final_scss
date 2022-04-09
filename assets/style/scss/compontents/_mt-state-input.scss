@@ -11,6 +11,7 @@
     border: 2px solid var(--primary);
   }
   input {
+    width: 100%;
     font-size: 1rem;
     border: none;
     &::placeholder {

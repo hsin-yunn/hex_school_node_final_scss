@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="stylesheet"
+    href="./assets/style/css/all.css"
+  >
+  <title>Signin</title>
+</head>
+
+<body>
+  <div class="container sm-pt-20 sm-pb-20">
+    <div class="mt-login-card pos-center pos-sm-rel center">
+      <img
+        src="./assets/images/img.svg"
+        alt="img"
+        class="mt-login-card__img"
+      >
+      <div class="mt-login-card__content ml-48 sm-ml-0 sm-mt-16">
+        <p class="mt-login-card__content__title">MetaWall</p>
+        <p class="mt-login-card__content__subtitle">註冊</p>
+        <div class="mt-state mt-16 sm-mt-8">
+          <div class="mt-state-input">
+            <input
+              type="text"
+              name="name"
+              placeholder="暱稱"
+            >
+          </div>
+          <p class="mt-state__error-message">暱稱至少 2 個字元以上</p>
+        </div>
+        <div class="mt-state mt-16 sm-mt-8">
+          <div class="mt-state-input">
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email"
+            >
+          </div>
+          <p class="mt-state__error-message">帳號已被註冊，請替換新的 Email！</p>
+        </div>
+        <div class="mt-state mt-16 sm-mt-8">
+          <div class="mt-state-input">
+            <input
+              type="password"
+              name="Password"
+              placeholder="Password"
+            >
+          </div>
+          <p class="mt-state__error-message">密碼需至少 8 碼以上，並中英混合</p>
+        </div>
+        <!-- disabled狀態 class將上disabeld -->
+        <button class="mt-btn mt-16 disabled">登入</button>
+        <a
+          href="./signin.html"
+          class="mt-text-btn mt-16"
+        >登入</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -28,6 +28,19 @@
   width: 100%;
 }
 
+.pos-sm-rel {
+  @include sm {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
+
+.center {
+  margin: 0 auto;
+}
+
 .overflow-y-hidden {
   overflow-y: hidden;
 }
@@ -38,4 +51,8 @@
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.d-none {
+  display: none;
 }
