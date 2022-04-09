@@ -1,0 +1,12 @@
+.header {
+  padding: 12px;
+  top: 0;
+  background-color: var(--white);
+  border-bottom: 3px solid var(--gray-900);
+  &__container {
+    @include flex;
+    @include flex_align;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}

@@ -8,7 +8,7 @@
 @import './space';
 
 // @import './layout/index.scss';
-// @import './layout/header';
+@import './layout/header';
 // @import './layout/footer';
 
 //component
@@ -18,3 +18,15 @@
 @import './compontents/mt-state-input';
 @import './compontents/mt-error-message';
 @import './compontents/mt-login-card';
+@import './compontents/mt-fixed-menu-layout';
+@import './compontents/mt-card';
+@import './compontents/mt-icon-btn';
+@import './compontents/mt-avatar';
+@import './compontents/mt-app-bar';
+@import './compontents/mt-link';
+@import './compontents/mt-post';
+@import './compontents/mt-message';
+@import './compontents/mt-message-bar';
+@import './compontents/mt-search-input';
+@import './compontents/mt-search-bar';
+@import './compontents/mt-dropdown';

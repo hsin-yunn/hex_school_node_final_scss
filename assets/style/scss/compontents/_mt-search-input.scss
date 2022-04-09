@@ -1,0 +1,38 @@
+.mt-search-input {
+  @include flex;
+  @include flex_align;
+  width: 100%;
+  height: 46px;
+  border: 2px solid var(--gray-900);
+  box-sizing: border-box;
+  &__input {
+    padding: 8px 16px;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--gray-900);
+    input {
+      padding: 0;
+      width: 100%;
+      font-size: 1rem;
+      border: none;
+      &::placeholder {
+        color: var(--gray-500);
+      }
+    }
+  }
+  &__btn {
+    @include ts;
+    flex: 0 0 46px;
+    height: 46px;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    border-left: 2px solid var(--gray-900);
+    box-sizing: border-box;
+    cursor: pointer;
+    &:not(.disabled):hover {
+      background-color: var(--secondary);
+    }
+  }
+}

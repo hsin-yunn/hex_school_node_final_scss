@@ -56,3 +56,20 @@
 .d-none {
   display: none;
 }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+}
+
+.sm-d-block {
+  @include sm {
+    display: block;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}

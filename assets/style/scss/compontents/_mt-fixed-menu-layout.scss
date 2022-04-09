@@ -1,0 +1,23 @@
+.mt-fixed-menu-layout {
+  @include flex;
+  @include flex_align(flex-start);
+  .mt-fixed-menu-layout__menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 109px;
+    flex: 0 0 309px;
+    &.start {
+      margin-right: 27px;
+    }
+    &.end {
+      margin-left: 27px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+      flex: 0 0 192px;
+    }
+  }
+  .mt-fixed-menu-layout__content {
+    width: 100%;
+  }
+}

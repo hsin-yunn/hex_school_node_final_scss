@@ -1,0 +1,103 @@
+.mt-icon-btn {
+  @include flex;
+  @include flex_align;
+  &:hover {
+    .mt-icon-btn__icon {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+    .mt-icon-btn__text {
+      color: var(--primary);
+    }
+  }
+  &.bold {
+    .mt-icon-btn__icon {
+      border: 3px solid var(--gray-900);
+    }
+  }
+  &.primary {
+    &:hover {
+      .mt-icon-btn__icon {
+        background-color: var(--secondary);
+      }
+    }
+    .mt-icon-btn__icon {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+  }
+  &.white {
+    &:hover {
+      .mt-icon-btn__icon {
+        color: var(--white);
+        background-color: var(--primary);
+      }
+    }
+    .mt-icon-btn__icon {
+      background-color: var(--white);
+    }
+  }
+  &.primary-text {
+    padding: 0;
+    cursor: pointer;
+    &:hover {
+      .mt-icon-btn__icon,
+      .mt-icon-btn__text {
+        color: var(--secondary);
+      }
+    }
+    .mt-icon-btn__text {
+      @include auto_margin_left(8px);
+      font-weight: normal;
+    }
+    .mt-icon-btn__icon {
+      width: auto;
+      height: auto;
+      border: 0;
+      color: var(--primary);
+      background-color: transparent;
+    }
+  }
+  &.gray-text {
+    padding: 0;
+    cursor: pointer;
+    &:hover {
+      .mt-icon-btn__icon,
+      .mt-icon-btn__text {
+        color: var(--primary);
+      }
+    }
+    .mt-icon-btn__text {
+      @include auto_margin_left(8px);
+      font-weight: normal;
+      color: var(--gray-500);
+    }
+    .mt-icon-btn__icon {
+      width: auto;
+      height: auto;
+      border: 0;
+      color: var(--gray-500);
+      background-color: transparent;
+    }
+  }
+  &__icon {
+    @include ts;
+    @include flex_center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    color: var(--gray-900);
+    border: 2px solid var(--gray-900);
+    background-color: var(--blue-100);
+  }
+  &__text {
+    @include ts;
+    @include auto_margin_left(16px);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: var(--gray-900);
+  }
+}

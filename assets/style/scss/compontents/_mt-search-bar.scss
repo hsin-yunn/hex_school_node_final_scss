@@ -1,0 +1,7 @@
+.mt-search-bar {
+  @include flex;
+  @include flex_align;
+  .mt-dropdown {
+    flex: 0 0 156px;
+  }
+}
