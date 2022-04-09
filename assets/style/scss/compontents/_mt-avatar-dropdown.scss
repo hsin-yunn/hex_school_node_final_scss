@@ -33,7 +33,7 @@
     background-color: var(--white);
     opacity: 0;
     visibility: hidden;
-    @include sm {
+    @include md {
       left: -80%;
     }
     &.active {

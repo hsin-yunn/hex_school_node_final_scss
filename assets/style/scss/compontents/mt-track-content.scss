@@ -1,0 +1,30 @@
+.mt-track-content {
+  @include flex;
+  @include flex_align;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  &__img {
+    width: 76px;
+    height: 76px;
+    border-radius: 7px 0 0 7px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 2px solid var(--gray-900);
+  }
+  &__name {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: var(--gray-900);
+  }
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--gray-900);
+  }
+  .mt-btn {
+    margin-left: auto;
+  }
+}

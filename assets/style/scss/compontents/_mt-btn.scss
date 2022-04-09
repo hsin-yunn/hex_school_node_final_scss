@@ -19,4 +19,25 @@
     box-shadow: none;
     cursor: not-allowed;
   }
+  &.gray {
+    color: var(--gray-900);
+    background-color: var(--gray-200);
+    &:not(.disabled):hover {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+  }
+  &.secondary {
+    color: var(--gray-900);
+    background-color: var(--secondary);
+    &:not(.disabled):hover {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+  }
+  &.small {
+    padding: 6px 32px;
+    width: auto;
+    height: 36px;
+  }
 }

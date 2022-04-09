@@ -10,6 +10,19 @@
   background-color: var(--white);
   border: 2px solid var(--gray-900);
   box-sizing: border-box;
+  &.radius {
+    border-radius: 8px;
+    &::after {
+      border-radius: 8px;
+    }
+  }
+  &.track {
+    padding: 16px 16px 16px 0px;
+    height: 80px;
+    &::after {
+      height: 80px;
+    }
+  }
   &::after {
     content: '';
     position: absolute;
