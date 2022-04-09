@@ -1,0 +1,26 @@
+.mt-multi-layer-card {
+  @include flex_center;
+  position: relative;
+  padding: 18px;
+  height: 64px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: bold;
+  color: var(--gray-900);
+  background-color: var(--white);
+  border: 2px solid var(--gray-900);
+  box-sizing: border-box;
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: -6px;
+    display: block;
+    width: 100%;
+    height: 64px;
+    background-color: var(--white);
+    border: 2px solid var(--gray-900);
+    box-sizing: border-box;
+  }
+}
