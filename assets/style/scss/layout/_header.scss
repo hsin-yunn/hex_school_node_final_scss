@@ -1,8 +1,17 @@
 .header {
   padding: 12px;
+  height: 60px;
   top: 0;
+  z-index: 100;
   background-color: var(--white);
   border-bottom: 3px solid var(--gray-900);
+  box-sizing: border-box;
+  .logo {
+    font-size: 1.625rem;
+    line-height: 36px;
+    font-family: 'Paytone One', sans-serif;
+    color: var(--gray-900);
+  }
   &__container {
     @include flex;
     @include flex_align;

@@ -5,6 +5,12 @@
   background-color: var(--white);
   border: 2px solid var(--gray-900);
   box-sizing: border-box;
+  &:hover {
+    .mt-dropdown__items {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
   &__btn {
     @include flex;
     @include flex_align;

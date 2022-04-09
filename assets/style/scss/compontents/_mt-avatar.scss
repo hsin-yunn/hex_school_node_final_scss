@@ -9,6 +9,7 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-sizing: border-box;
     @include sm {
       width: 45px;
       height: 45px;

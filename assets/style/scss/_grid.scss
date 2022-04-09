@@ -18,4 +18,11 @@
   @include md {
     max-width: calc(100% - 80px);
   }
+  @include sm {
+    max-width: calc(100% - 40px);
+  }
+}
+
+.padding-49 {
+  padding: 49px;
 }
