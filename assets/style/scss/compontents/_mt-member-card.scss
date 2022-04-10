@@ -29,10 +29,18 @@
   &__btn {
     text-align: center;
     cursor: pointer;
+    @include sm {
+      @include flex;
+      @include flex_align;
+      &__text {
+        @include auto_margin_left(8px);
+      }
+    }
     &__text {
       font-size: 0.875rem;
       font-weight: bold;
       line-height: 1.5;
+      white-space: nowrap;
       color: var(--gray-900);
     }
     &__icon {
