@@ -21,4 +21,26 @@
     line-height: 20px;
     color: var(--gray-900);
   }
+
+  &__btn-list {
+    @include flex;
+    @include flex_align;
+  }
+  &__btn {
+    text-align: center;
+    cursor: pointer;
+    &__text {
+      font-size: 0.875rem;
+      font-weight: bold;
+      line-height: 1.5;
+      color: var(--gray-900);
+    }
+    &__icon {
+      font-size: 1.5rem;
+      color: var(--gray-900);
+      &.blue {
+        color: var(--primary);
+      }
+    }
+  }
 }

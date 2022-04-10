@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Baloo+Da+2&family=Noto+Sans+TC:wght@400;700&family=Paytone+One&display=swap"
+  >
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./assets/style/css/all.css"
+  >
+  <title>NodeJs Final Scss - 我按讚的貼文</title>
+</head>
+
+<body>
+  <div class="header pos-sticky">
+    <div class="header__container container">
+      <a href="./index.html">
+        <div class="logo font-paytone">MetaWall</div>
+      </a>
+      <div class="mt-avatar-dropdown">
+        <div class="mt-avatar-dropdown__content">
+          <div class="mt-avatar">
+            <div
+              class="mt-avatar__img"
+              style="background-image: url('./assets/images/avatar.jpg');"
+            ></div>
+          </div>
+          <p class="mt-avatar-dropdown__text ml-8">Member</p>
+        </div>
+        <ul class="mt-avatar-dropdown__items">
+          <li class="mt-avatar-dropdown__item"><a href="/">我的貼文牆</a></li>
+          <li class="mt-avatar-dropdown__item"><a href="/">修改個人資料</a></li>
+          <li class="mt-avatar-dropdown__item"><a href="/">登出</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="mt-fixed-menu-layout container padding-49 sm-pa-20">
+    <div class="mt-fixed-menu-layout__content">
+      <div class="mt-multi-layer-card">
+        我按讚的貼文
+      </div>
+      <div class="mt-member-card mt-32 pr-40">
+        <div class="mt-avatar">
+          <div
+            class="mt-avatar__img"
+            style="background-image: url('./assets/images/avatar.jpg');"
+          ></div>
+          <div class="ml-16">
+            <a
+              href="./home.html"
+              class="mt-link"
+            >波吉</a>
+            <p class="mt-avatar__text">發文時間：2022/2/14 12:00</p>
+          </div>
+        </div>
+        <ul class="mt-member-card__btn-list">
+          <li>
+            <button class="mt-member-card__btn">
+              <i class="material-icons-outlined mt-member-card__btn__icon blue">
+                thumb_up
+              </i>
+              <p class="mt-member-card__btn__text fw-bold">取消</p>
+            </button>
+          </li>
+          <li class="ml-36">
+            <button class="mt-member-card__btn">
+              <i class="material-icons-outlined mt-member-card__btn__icon">
+                arrow_circle_right
+              </i>
+              <p class="mt-member-card__btn__text fw-bold">查看</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-fixed-menu-layout__menu end">
+      <div class="mt-card">
+        <button class="mt-btn">張貼動態</button>
+        <ul class="mt-24">
+          <li>
+            <a
+              href="./personal.html"
+              class="mt-icon-btn"
+            >
+              <div class="mt-avatar">
+                <div
+                  class="mt-avatar__img"
+                  style="background-image: url('./assets/images/avatar.jpg');"
+                ></div>
+              </div>
+              <p class="mt-icon-btn__text">邊緣小杰</p>
+            </a>
+          </li>
+          <li class="mt-24">
+            <a
+              href="./track-list.html"
+              class="mt-icon-btn"
+            >
+              <i class="material-icons-outlined mt-icon-btn__icon">
+                notifications
+              </i>
+              <p class="mt-icon-btn__text">追蹤名單</p>
+            </a>
+          </li>
+          <li class="mt-24">
+            <a
+              href="./like-posts.html"
+              class="mt-icon-btn"
+            >
+              <i class="material-icons-outlined mt-icon-btn__icon">
+                thumb_up
+              </i>
+              <p class="mt-icon-btn__text">我按讚的文章</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="d-none sm-d-block">
+    <ul class="mt-app-bar fixed-bottom">
+      <li>
+        <a
+          href="./like-posts.html"
+          class="mt-icon-btn white bold"
+        >
+          <i class="material-icons-outlined mt-icon-btn__icon">
+            thumb_up
+          </i>
+        </a>
+      </li>
+      <li class="ml-24">
+        <a
+          href="./like-posts.html"
+          class="mt-icon-btn white bold"
+        >
+          <i class="material-icons-outlined mt-icon-btn__icon">
+            home
+          </i>
+        </a>
+      </li>
+      <li class="ml-24">
+        <a
+          href="./like-posts.html"
+          class="mt-icon-btn white bold"
+        >
+          <i class="material-icons-outlined mt-icon-btn__icon">
+            notifications
+          </i>
+        </a>
+      </li>
+      <li class="ml-24">
+        <a
+          href="./like-posts.html"
+          class="mt-icon-btn primary bold"
+        >
+          <i class="material-icons-outlined mt-icon-btn__icon">
+            add
+          </i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
