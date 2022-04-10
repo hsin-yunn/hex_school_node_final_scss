@@ -3,7 +3,7 @@
   @include flex_align;
   width: 100%;
   .mt-avatar__img {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
   }
   &__content {
