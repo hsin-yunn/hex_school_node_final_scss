@@ -1,0 +1,29 @@
+.mt-state-radio {
+  @include flex;
+  @include flex_align;
+  .mt-radio {
+    @include flex;
+    @include flex_align;
+    cursor: pointer;
+    .mt-radio__input {
+      display: none;
+      &:not(:checked) ~ .un-checked {
+        display: block;
+      }
+      &:not(:checked) ~ .checked {
+        display: none;
+      }
+    }
+    .un-checked {
+      display: none;
+    }
+    .mt-radio__input-icon {
+      color: var(--gray-900);
+    }
+    .mt-radio__input-text {
+      @include auto_margin_left(8px);
+      line-height: 19px;
+      color: var(--gray-900);
+    }
+  }
+}

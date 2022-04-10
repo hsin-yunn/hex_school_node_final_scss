@@ -1,0 +1,31 @@
+.mt-tabs {
+  @include flex;
+  @include flex_align;
+  .mt-tab {
+    @include ts;
+    padding: 8px 24px;
+    background-color: var(--white);
+    border: 2px solid var(--gray-900);
+    border-bottom: none;
+    border-radius: 8px 8px 0px 0px;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--gray-700);
+      a {
+        color: var(--white);
+      }
+    }
+    &.active {
+      background-color: var(--gray-900);
+      a {
+        color: var(--white);
+      }
+    }
+    a {
+      @include ts;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--gray-900);
+    }
+  }
+}

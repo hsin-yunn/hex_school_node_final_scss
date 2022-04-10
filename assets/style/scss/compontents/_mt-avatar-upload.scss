@@ -1,0 +1,21 @@
+.mt-avatar-upload {
+  @include flex_center;
+  flex-direction: column;
+  .mt-avatar__img {
+    width: 107px;
+    height: 107px;
+  }
+  &__btn {
+    @include ts;
+    padding: 4px 24px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--white);
+    background-color: var(--gray-900);
+    cursor: pointer;
+    &:hover {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+  }
+}

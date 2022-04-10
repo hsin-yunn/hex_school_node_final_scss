@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Baloo+Da+2&family=Noto+Sans+TC:wght@400;700&family=Paytone+One&display=swap"
+  >
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./assets/style/css/all.css"
+  >
+  <title>NodeJs Final Scss - 個人資料</title>
+</head>
+
+<body>
+  <div class="header pos-sticky">
+    <div class="header__container container">
+      <a href="./index.html">
+        <div class="logo font-paytone">MetaWall</div>
+      </a>
+      <div class="mt-avatar-dropdown">
+        <div class="mt-avatar-dropdown__content">
+          <div class="mt-avatar">
+            <div
+              class="mt-avatar__img"
+              style="background-image: url('./assets/images/avatar.jpg');"
+            ></div>
+          </div>
+          <p class="mt-avatar-dropdown__text ml-8">Member</p>
+        </div>
+        <ul class="mt-avatar-dropdown__items">
+          <li class="mt-avatar-dropdown__item"><a href="/">我的貼文牆</a></li>
+          <li class="mt-avatar-dropdown__item"><a href="/">修改個人資料</a></li>
+          <li class="mt-avatar-dropdown__item"><a href="/">登出</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="mt-fixed-menu-layout container padding-49 sm-pa-20">
+    <div class="mt-fixed-menu-layout__content">
+      <div class="mt-multi-layer-card">
+        修改個人資料
+      </div>
+      <ul class="mt-tabs ml-16 mt-32">
+        <li class="mt-tab active"><a href="./personal-info.html">暱稱修改</a></li>
+        <li class="mt-tab"><a href="./personal-password-reset.html">重設密碼</a>
+        </li>
+      </ul>
+      <div class="mt-card round-radius">
+        <div class="mt-center-container">
+          <div class="mt-avatar-upload">
+            <div class="mt-avatar">
+              <div
+                class="mt-avatar__img"
+                style="background-image: url('./assets/images/avatar.jpg');"
+              ></div>
+            </div>
+            <button class="mt-avatar-upload__btn mt-20">上傳大頭照</button>
+          </div>
+          <div class="mt-state mt-12 sm-mt-8">
+            <p class="mt-state__label">暱稱</p>
+            <div class="mt-state-input mt-4">
+              <input
+                type="text"
+                name="nickname"
+                placeholder="暱稱"
+              >
+            </div>
+          </div>
+          <div class="mt-state mt-16 sm-mt-8">
+            <p class="mt-state__label">性別</p>
+            <div class="mt-state-radio mt-8">
+              <label class="mt-radio">
+                <input
+                  type="radio"
+                  name="gender"
+                  class="mt-radio__input"
+                  value="man"
+                  checked
+                >
+                <i
+                  class="material-icons un-checked mt-radio__input-icon">radio_button_unchecked</i>
+                <i
+                  class="material-icons checked mt-radio__input-icon">radio_button_checked</i>
+                <p class="mt-radio__input-text">男性</p>
+              </label>
+              <label class="mt-radio ml-32">
+                <input
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  class="mt-radio__input"
+                >
+                <i
+                  class="material-icons un-checked mt-radio__input-icon">radio_button_unchecked</i>
+                <i
+                  class="material-icons checked mt-radio__input-icon">radio_button_checked</i>
+                <p class="mt-radio__input-text">女性</p>
+              </label>
+            </div>
+          </div>
+          <p class="mt-error-message text-align-center mt-32">1.圖片寬高比必需為
+            1:1，請重新輸入</p>
+          <p class="mt-error-message text-align-center">2. 解析度寬度至少 300像素以上，請重新輸入
+          </p>
+          <button class="mt-btn secondary mt-32">送出更新</button>
+        </div>
+      </div>
+    </div>
+    <div class="mt-fixed-menu-layout__menu end">
+      <div class="mt-card">
+        <button class="mt-btn">張貼動態</button>
+        <ul class="mt-24">
+          <li>
+            <a
+              href="./personal.html"
+              class="mt-icon-btn"
+            >
+              <div class="mt-avatar">
+                <div
+                  class="mt-avatar__img"
+                  style="background-image: url('./assets/images/avatar.jpg');"
+                ></div>
+              </div>
+              <p class="mt-icon-btn__text">邊緣小杰</p>
+            </a>
+          </li>
+          <li class="mt-24">
+            <a
+              href="./track-list.html"
+              class="mt-icon-btn"
+            >
+              <i class="material-icons-outlined mt-icon-btn__icon">
+                notifications
+              </i>
+              <p class="mt-icon-btn__text">追蹤名單</p>
+            </a>
+          </li>
+          <li class="mt-24">
+            <a
+              href="./like-posts.html"
+              class="mt-icon-btn"
+            >
+              <i class="material-icons-outlined mt-icon-btn__icon">
+                thumb_up
+              </i>
+              <p class="mt-icon-btn__text">我按讚的文章</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="d-none sm-d-block">
+    <ul class="mt-app-bar fixed-bottom">
+      <li>
+        <a
+          href="./like-posts.html"
+          class="mt-icon-btn white bold"
+        >
+          <i class="material-icons-outlined mt-icon-btn__icon">
+            thumb_up
+          </i>
+        </a>
+      </li>
+      <li class="ml-24">
+        <a
+          href="./like-posts.html"
+          class="mt-icon-btn white bold"
+        >
+          <i class="material-icons-outlined mt-icon-btn__icon">
+            home
+          </i>
+        </a>
+      </li>
+      <li class="ml-24">
+        <a
+          href="./like-posts.html"
+          class="mt-icon-btn white bold"
+        >
+          <i class="material-icons-outlined mt-icon-btn__icon">
+            notifications
+          </i>
+        </a>
+      </li>
+      <li class="ml-24">
+        <a
+          href="./like-posts.html"
+          class="mt-icon-btn primary bold"
+        >
+          <i class="material-icons-outlined mt-icon-btn__icon">
+            add
+          </i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
